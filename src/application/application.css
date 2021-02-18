@@ -1,0 +1,9 @@
+#MainAnchor {
+    -fx-background-image: url("/images/project.jpg");
+    -fx-background-size: 850 650;
+}
+
+#home_logo {
+    -fx-background-image: url("/images/logo.png");
+    -fx-background-size: 197 100;
+}
