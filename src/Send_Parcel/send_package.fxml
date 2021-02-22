@@ -8,30 +8,47 @@
 
 <AnchorPane fx:id="sendpackage_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Send_Parcel.SendPackage_Controller">
    <children>
-      <Label fx:id="sendpackage_lbl" alignment="CENTER" layoutX="281.0" layoutY="96.0" prefHeight="32.0" prefWidth="288.0" text="Send a Package">
+      <Label fx:id="sendpackage_lbl" alignment="CENTER" layoutX="281.0" layoutY="33.0" prefHeight="32.0" prefWidth="288.0" text="Send a Package">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="pickup_txt" layoutX="495.0" layoutY="210.0" prefHeight="36.0" prefWidth="205.0" promptText="Address" />
-      <Label fx:id="pickup_lbl" layoutX="177.0" layoutY="210.0" prefHeight="36.0" prefWidth="172.0" text="Pick Up Point:">
+      <TextField fx:id="pickup_txt" layoutX="495.0" layoutY="100.0" prefHeight="36.0" prefWidth="205.0" promptText="Address" />
+      <Label fx:id="pickup_lbl" layoutX="177.0" layoutY="100.0" prefHeight="36.0" prefWidth="172.0" text="Pick Up Point:">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="delivery_lbl" layoutX="177.0" layoutY="279.0" prefHeight="36.0" prefWidth="172.0" text="Delivery Point:">
+      <Label fx:id="delivery_lbl" layoutX="177.0" layoutY="163.0" prefHeight="36.0" prefWidth="172.0" text="Delivery Point:">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="delivery_txt" layoutX="495.0" layoutY="279.0" prefHeight="36.0" prefWidth="205.0" promptText="Address" />
-      <Label fx:id="package_weight_lbl" layoutX="177.0" layoutY="346.0" prefHeight="36.0" prefWidth="172.0" text="Weight:">
+      <TextField fx:id="delivery_txt" layoutX="495.0" layoutY="163.0" prefHeight="36.0" prefWidth="205.0" promptText="Address" />
+      <Label fx:id="package_weight_lbl" layoutX="177.0" layoutY="222.0" prefHeight="36.0" prefWidth="172.0" text="Weight:">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="package_weight_txt" layoutX="495.0" layoutY="346.0" prefHeight="36.0" prefWidth="205.0" promptText="kg" />
-      <Button fx:id="Next_btn" layoutX="622.0" layoutY="431.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="78.0" text="Next">
+      <TextField fx:id="package_weight_txt" layoutX="495.0" layoutY="222.0" prefHeight="36.0" prefWidth="205.0" promptText="kg" />
+      <Button fx:id="Next_btn" layoutX="495.0" layoutY="284.0" mnemonicParsing="false" onAction="#Show" prefHeight="25.0" prefWidth="205.0" text="See Price and Generate Token">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="price_lbl" layoutX="177.0" layoutY="342.0" prefHeight="36.0" prefWidth="204.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="token_lbl" layoutX="177.0" layoutY="421.0" prefHeight="36.0" prefWidth="204.0" text="Token No: ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price_txt" layoutX="496.0" layoutY="342.0" prefHeight="36.0" prefWidth="204.0" />
+      <TextField fx:id="token_txt" layoutX="496.0" layoutY="421.0" prefHeight="36.0" prefWidth="204.0" />
+      <Button fx:id="Book_btn" layoutX="596.0" layoutY="486.0" mnemonicParsing="false" onAction="#Book" prefHeight="25.0" prefWidth="104.0" text="Book">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
