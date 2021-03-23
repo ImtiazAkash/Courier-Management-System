@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="track2Anchor" prefHeight="542.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="textf1" layoutX="53.0" layoutY="107.0" prefHeight="53.0" prefWidth="168.0" style="-fx-background-color: White;" text=" Your Order Is Taken">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textf2" layoutX="262.0" layoutY="107.0" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: White;" text=" Packing Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textf3" layoutX="442.0" layoutY="107.0" prefHeight="53.0" prefWidth="168.0" style="-fx-background-color: White;" text=" Order Is on the way">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textf4" layoutX="646.0" layoutY="107.0" prefHeight="53.0" prefWidth="141.0" style="-fx-background-color: White;" text=" Order Delivered">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="date1" layoutX="133.0" layoutY="343.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: White;" text=" Probability Of Delivery ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textf1_sta" layoutX="89.0" layoutY="201.0" prefHeight="17.0" prefWidth="99.0" style="-fx-background-color: white;" text="  Not Yet Done" />
+      <Label fx:id="textf2_sta" layoutX="283.0" layoutY="201.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: white;" text="  Not Yet Done" />
+      <Label fx:id="textf3_sta" layoutX="479.0" layoutY="205.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: white;" text="  Not Yet Done" />
+      <Label fx:id="textf4_sta" layoutX="678.0" layoutY="201.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: white;" text="  Not Yet Done" />
+      <Label fx:id="date2" layoutX="326.0" layoutY="343.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: White;" text="            Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

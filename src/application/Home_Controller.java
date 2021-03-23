@@ -2,7 +2,7 @@ package application;
 
 import java.io.IOException;
 
-
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
@@ -46,6 +46,9 @@ public class Home_Controller {
     @FXML
     private AnchorPane sendpackage_anchor;
 
+    @FXML 
+    private Label administration;
+
     
     @FXML
 	public void Send_Package(MouseEvent event) throws IOException {
@@ -64,7 +67,19 @@ public class Home_Controller {
     @FXML
     public void Back(MouseEvent event) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/application/HomePage.fxml"));
-		MainAnchor.getChildren().setAll(pane);
+		    MainAnchor.getChildren().setAll(pane);
+    }
+
+    @FXML
+    public void admin(MouseEvent event) throws IOException {
+      AnchorPane pane = FXMLLoader.load(getClass().getResource("/administration/adminPanel.fxml"));
+		  HomeAnchor.getChildren().setAll(pane);
+    }
+
+    @FXML
+    public void track(MouseEvent event) throws IOException {
+      AnchorPane pane = FXMLLoader.load(getClass().getResource("/tracking/Traking1.fxml"));
+		  HomeAnchor.getChildren().setAll(pane);
     }
 
     

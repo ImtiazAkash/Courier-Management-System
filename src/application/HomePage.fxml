@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="MainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Home_Controller">
    <children>
-      <Label fx:id="home_label" alignment="CENTER_RIGHT" layoutX="223.0" layoutY="24.0" prefHeight="85.0" prefWidth="621.0" style="-fx-background-color: gray;" text="Courier Management System" AnchorPane.bottomAnchor="541.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="24.0">
+      <Label fx:id="home_label" alignment="CENTER_RIGHT" layoutX="223.0" layoutY="24.0" prefHeight="85.0" prefWidth="644.0" style="-fx-background-color: gray;" text="Courier Management System" AnchorPane.bottomAnchor="541.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="24.0">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -20,46 +20,41 @@
       </ImageView>
       <AnchorPane fx:id="HomeAnchor" layoutY="109.0" prefHeight="542.0" prefWidth="850.0">
          <children>
-            <ImageView fx:id="pkg_send" fitHeight="129.0" fitWidth="174.0" layoutX="40.0" layoutY="238.0" onMouseClicked="#Send_Package" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pkg_send" fitHeight="129.0" fitWidth="174.0" layoutX="86.0" layoutY="244.0" onMouseClicked="#Send_Package" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/package.png" />
                </image>
             </ImageView>
-            <Label fx:id="pkg_send_lbl" layoutX="40.0" layoutY="373.0" onMouseClicked="#Send_Package" prefHeight="22.0" prefWidth="129.0" text="Send a Package">
+            <Label fx:id="pkg_send_lbl" layoutX="86.0" layoutY="373.0" onMouseClicked="#Send_Package" prefHeight="22.0" prefWidth="129.0" text="Send a Package">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ImageView fx:id="return_pkg" fitHeight="111.0" fitWidth="136.0" layoutX="256.0" layoutY="271.0" onMouseClicked="#Return_Package" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="return_pkg" fitHeight="111.0" fitWidth="136.0" layoutX="368.0" layoutY="268.0" onMouseClicked="#Return_Package" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/return.png" />
                </image>
             </ImageView>
-            <Label fx:id="return_pkg_lbl" layoutX="256.0" layoutY="373.0" onMouseClicked="#Return_Package" prefHeight="22.0" prefWidth="180.0" text="Return a Package">
+            <Label fx:id="return_pkg_lbl" layoutX="368.0" layoutY="373.0" onMouseClicked="#Return_Package" prefHeight="22.0" prefWidth="180.0" text="Return a Package">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ImageView fx:id="track_pkg" fitHeight="129.0" fitWidth="129.0" layoutX="464.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="track_pkg" fitHeight="129.0" fitWidth="129.0" layoutX="654.0" layoutY="238.0" onMouseClicked="#track" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/tracking.png" />
                </image>
             </ImageView>
-            <Label fx:id="track_pkg_lbl" layoutX="464.0" layoutY="373.0" prefHeight="22.0" prefWidth="123.0" text=" Tracking">
+            <Label fx:id="track_pkg_lbl" layoutX="654.0" layoutY="373.0" onMouseClicked="#track" prefHeight="22.0" prefWidth="123.0" text=" Tracking">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="cancelorder_lbl" layoutX="671.0" layoutY="373.0" prefHeight="22.0" prefWidth="123.0" text="Cancel Order">
+            <Label fx:id="administration" alignment="CENTER" layoutX="639.0" layoutY="3.0" onMouseClicked="#admin" prefHeight="22.0" prefWidth="211.0" style="-fx-text-fill: blue; -fx-underline: true;" text="Administration">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="111.0" fitWidth="150.0" layoutX="671.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/cancelorder.jpg" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </children>
